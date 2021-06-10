@@ -16,7 +16,7 @@ function handleClick() {
     .then((json) => {
       textOutput.innerText = json.contents.translated;
     })
-    .catch(() => handleError);
+    .catch(handleError);
 }
 
 function handleError() {
